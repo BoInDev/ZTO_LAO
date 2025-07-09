@@ -15,9 +15,13 @@
     "cors": "^2.8.5",
     "dotenv": "^17.1.0",
     "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.10",
+    "path": "^0.12.7",
     "require": "^2.4.20"
   }
 }
