@@ -6,7 +6,7 @@ const connected = createPool({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'gold_3cw3'
+  database: 'naphalai'
 });
 
 module.exports = connected;

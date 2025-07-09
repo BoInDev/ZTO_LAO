@@ -1,23 +1,10 @@
 const express = require("express");
 require('dotenv').config();
-// const helmet = require("helmet");
-const bodyParser = require("body-parser");
-const cors = require('cors')
 const app = express();
-const port = 2020;
+const port = 9090;
 // Import router
-const router_masterdata = require("./src/router/masterdata"); 
-const router_auth = require("./src/router/auth");
-
-// // Middleware to parse JSON bodies
-app.use(express.json());
-app.use(cors())
-
-
-//use bodyParser
-app.use(bodyParser.json({extended: true}))
-app.use(bodyParser.urlencoded({extended: true,limit: "500mb",parameterLimit: 500}))
-
+const router_masterdata = require("./router/masterdata_router"); 
+const router_auth = require("./router/auth_router");
 
 // Router Integration
 app.use('/masterdata', router_masterdata);
